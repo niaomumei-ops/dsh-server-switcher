@@ -1,7 +1,7 @@
 {
   "name": "dsh-server-switcher",
-  "description": "DSH 服务器切换插件 — 左下角链接跳转（野草云 / PC / 阿里云）",
-  "version": "1.0.0",
+  "description": "DSH 服务器切换插件 — 顶部居中展开面板 + 6种皮肤 + 重启按钮",
+  "version": "1.2.0",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -19,6 +19,9 @@
         "@deepseek-ai/dsh-client-runtime"
       ],
       "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
     }
   },
   "license": "MIT"
